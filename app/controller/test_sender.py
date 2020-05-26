@@ -161,7 +161,8 @@ def test_map_row_to_marketingcloud_api(consumer_row, valid_fi_ids):
             "Vision_Insurance_Product_Id": consumer_row[0]["vision_insurance"],
             "Dental_Insurance_Product_Id": consumer_row[0]["dental_insurance"],
             "Asset_Protection_Product_Id": consumer_row[0]["asset_protection"],
-            "Marketplace_Product_Id": consumer_row[0]["marketplace_product_id"]
+            "Marketplace_Product_Id": consumer_row[0]["marketplace_product_id"],
+            "keystore":consumer_row[0]["keystore"]
         }
     }
 

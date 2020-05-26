@@ -15,9 +15,13 @@ def get_valid_fi_ids(connection):
 
 
 def get_recently_changed_customers_generator(connection):
+
+    #DODATI ISPOD SELECT-A
+    #@keyvalue AS 'keystore' = SELECT (nesto) FROM `customer_attribute`
+    #DODATI ISPOD SELECT-A, promeniti "nesto" u red iz baze
     sql = """
 SELECT
-    @keyvalue AS 'keystore' = SELECT (nesto) FROM `customer_attribute`
+    
     S.`surrogate_id`,
     SPLM.`person_link_id`,
     "Customer" AS "contact_status",
