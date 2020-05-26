@@ -29,7 +29,7 @@ def consumer_row():
         "vision_insurance": "1",
         "dental_insurance": "1",
         "asset_protection": "1",
-        "marketplace_product_id": "1"
+        "marketplace_product_id": "1 \n"
     }]
 
 

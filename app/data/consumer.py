@@ -17,6 +17,7 @@ def get_valid_fi_ids(connection):
 def get_recently_changed_customers_generator(connection):
     sql = """
 SELECT
+    @keyvalue AS 'keystore' = SELECT (nesto) FROM `customer_attribute`
     S.`surrogate_id`,
     SPLM.`person_link_id`,
     "Customer" AS "contact_status",

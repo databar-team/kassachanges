@@ -180,6 +180,7 @@ def map_row_to_marketingcloud_api(row, fi_id):
             "Vision_Insurance_Product_Id": row.get("vision_insurance", "0"),
             "Dental_Insurance_Product_Id": row.get("dental_insurance", "0"),
             "Asset_Protection_Product_Id": row.get("asset_protection", "0"),
-            "Marketplace_Product_Id": row.get("marketplace_product_id", "0")
+            "Marketplace_Product_Id": row.get("marketplace_product_id", "0"),
+            "keystore":row.get("keystore")
         }
     }
